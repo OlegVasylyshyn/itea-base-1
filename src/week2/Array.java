@@ -6,6 +6,7 @@ package week2;
 public class Array {
 
     private static int[] nums = new int[10];
+    private int size = 0;
 
     public static void main(String[] args) {
 
