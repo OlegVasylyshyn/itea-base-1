@@ -6,7 +6,7 @@ package week2;
 public class Array {
 
     private static int[] nums = new int[10];
-    private int size = 0;
+    private static int size = 0;
 
     public static void main(String[] args) {
 
@@ -27,7 +27,7 @@ public class Array {
         add(7);
         add(9);
 
-        get(1);
+        get(4);
 
         sort();
 
@@ -54,7 +54,16 @@ public class Array {
      * @param value - new value for nums field.
      */
     private static void add(int value) {
-        // TODO: 9/19/17
+        if(nums.length >= size){
+            copyArray();
+        }
+        nums[size++] = value;
+    }
+
+    private static void copyArray() {
+        int[] newArray = new int[nums.length * 2];
+        System.arraycopy(nums, 0, newArray, 0, nums.length);
+        nums = newArray;
     }
 
     /**
@@ -64,8 +73,7 @@ public class Array {
      *         index in nums.
      */
     private static int get(int index) {
-        // TODO: 9/19/17
-        return 0;
+        return nums[index];
     }
 
     /**
