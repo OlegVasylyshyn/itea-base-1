@@ -54,7 +54,7 @@ public class Array {
      * @param value - new value for nums field.
      */
     private static void add(int value) {
-        if(nums.length >= size){
+        if(nums.length <= size){
             copyArray();
         }
         nums[size++] = value;
