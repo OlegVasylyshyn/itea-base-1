@@ -95,16 +95,31 @@ public class Array {
     }
 
     /**
-     * Add new value or replace old value
-     * @return return old value or -1.
-     * @param index of nums
-     * @param value for insert.
+     * Inserts the specified element at the specified position in this
+     * list. Shifts the element currently at that position (if any) and
+     * any subsequent elements to the right (adds one to their indices).
      *
-     * @throws ArrayIndexOutOfBoundsException if no such
-     *         index in nums.
+     * @param index index at which the specified element is to be inserted
+     * @param value element to be inserted
+     * @throws IndexOutOfBoundsException if no such
+     *          index in nums.
      */
-    private static int add(int index, int value) {
+    private static void add(int index, int value) {
         // TODO: 9/19/17
+    }
+
+    /**
+     * Replaces the element at the specified position in this list with
+     * the specified element.
+     *
+     * @param index index of the element to replace
+     * @param value element to be stored at the specified position
+     * @return the element previously at the specified position
+     * @throws IndexOutOfBoundsException if no such
+     *          index in nums.
+     */
+    private static int replace(int index, int value) {
+        // TODO: 9/21/17
         return -1;
     }
 
