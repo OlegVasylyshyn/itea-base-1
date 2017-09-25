@@ -1,50 +1,14 @@
 package week2;
 
+import week3.Student;
+
 /**
  * Home work for ITEA BASE week 2
  */
-public class Array {
+public class StudentGroup {
 
-    private static int[] nums = new int[10];
-    private static int size = 0;
-
-    public static void main(String[] args) {
-
-        add(10);
-        add(5);
-        add(7);
-        add(2);
-        add(15);
-        add(5);
-        add(0);
-        add(2);
-        add(10);
-        add(5);
-        add(2);
-        add(2);
-        add(13);
-        add(1);
-        add(7);
-        add(9);
-
-        get(4);
-
-        sort();
-
-        search(5);
-
-        add(2, 10);
-
-        remove(0);
-
-        removeValue(10);
-
-        invert();
-
-        subArray(3, 8);
-
-        System.out.println(getString());
-    }
+    private  Student[] students = new Student[10];
+    private  int size = 0;
 
     /**
      * Add int value to the end of array.
@@ -53,17 +17,17 @@ public class Array {
      *
      * @param value - new value for nums field.
      */
-    private static void add(int value) {
-        if(nums.length <= size){
+    public void add(Student value) {
+        if(students.length <= size){
             copyArray();
         }
-        nums[size++] = value;
+        students[size++] = value;
     }
 
-    private static void copyArray() {
-        int[] newArray = new int[nums.length * 2];
-        System.arraycopy(nums, 0, newArray, 0, nums.length);
-        nums = newArray;
+    private void copyArray() {
+        Student[] newArray = new Student[students.length * 2];
+        System.arraycopy(students, 0, newArray, 0, students.length);
+        students = newArray;
     }
 
     /**
@@ -72,14 +36,14 @@ public class Array {
      * @throws ArrayIndexOutOfBoundsException if no such
      *         index in nums.
      */
-    private static int get(int index) {
-        return nums[index];
+    public  Student get(int index) {
+        return students[index];
     }
 
     /**
      * Ascending sorts nums
      */
-    private static void sort() {
+    public  void sort() {
         // TODO: 9/19/17
     }
 
@@ -89,7 +53,7 @@ public class Array {
      *      or -1 if was not found such value.
      * @param value - searched value in nums
      */
-    private static int search(int value) {
+    public  int search(Student value) {
         // TODO: 9/19/17
         return -1;
     }
@@ -104,7 +68,7 @@ public class Array {
      * @throws IndexOutOfBoundsException if no such
      *          index in nums.
      */
-    private static void add(int index, int value) {
+    public  void add(int index, Student value) {
         // TODO: 9/19/17
     }
 
@@ -118,9 +82,9 @@ public class Array {
      * @throws IndexOutOfBoundsException if no such
      *          index in nums.
      */
-    private static int replace(int index, int value) {
+    public  Student replace(int index, Student value) {
         // TODO: 9/21/17
-        return -1;
+        return null;
     }
 
     /**
@@ -129,16 +93,16 @@ public class Array {
      * @throws ArrayIndexOutOfBoundsException if no such
      *          index in nums.
      */
-    private static int remove(int index) {
+    public  Student remove(int index) {
         // TODO: 9/19/17
-        return -1;
+        return null;
     }
 
     /**
      * @return removed value or -1 if was not found
      * @param value removed value.
      */
-    private static int removeValue(int value) {
+    public  int removeValue(Student value) {
         // TODO: 9/19/17
         return -1;
     }
@@ -146,7 +110,7 @@ public class Array {
     /**
      * Inverts nums
      */
-    private static void invert() {
+    public  void invert() {
         // TODO: 9/19/17
     }
 
@@ -160,7 +124,7 @@ public class Array {
      * @throws ArrayIndexOutOfBoundsException if no such
      *         indexes in nums.
      */
-    private static int[] subArray(int from, int to) {
+    public  Student[] subArray(int from, int to) {
         // TODO: 9/19/17
         return null;
     }
@@ -169,9 +133,22 @@ public class Array {
      * Convert nums into string.
      * @return nums in string format.
      */
-    private static String getString(){
-        // TODO: 9/19/17
-        return "";
+    public  String getString(){
+        String toString = "";
+        for (int i = 0; i < size; i++) {
+            toString += students[i].getFirstName() + " " + students[i].getLastName() +
+                    " " + students[i].getAge() + " " + students[i].getAverageMark() + " \n";
+        }
+
+        return toString;
+    }
+
+    public Student[] getStudents(){
+        return students.clone();
+    }
+
+    public int size(){
+        return size;
     }
 
 }
