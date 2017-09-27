@@ -61,11 +61,16 @@ public class Student {
         this.averageMark = averageMark;
     }
 
-    public Student(long id, String firstName, String lastName, int age, double averageMark) {
-        this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.age = age;
-        this.averageMark = averageMark;
+    @Override
+    public String toString() {
+        final StringBuilder sb = new StringBuilder("Student{");
+        sb.append("id=").append(id);
+        sb.append(", firstName='").append(firstName).append('\'');
+        sb.append(", lastName='").append(lastName).append('\'');
+        sb.append(", age=").append(age);
+        sb.append(", averageMark=").append(averageMark);
+        sb.append('}');
+        return sb.toString();
     }
+
 }
