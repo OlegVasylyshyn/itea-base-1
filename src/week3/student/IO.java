@@ -33,4 +33,7 @@ public class IO implements MyScanner{
         System.out.print(message + " - ");
         return scanner.nextDouble();
     }
+    
+    // just for test
+    
 }
