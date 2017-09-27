@@ -6,6 +6,10 @@ public class Animal {
     protected String name;
     protected String color;
 
+    public Animal() {
+        System.out.println("Animal constructor");
+    }
+
     public String getType() {
         return type;
     }

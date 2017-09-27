@@ -1,4 +1,4 @@
-package week3;
+package week3.student;
 
 /**
  * POJO
@@ -7,7 +7,9 @@ package week3;
 public class Student {
 
     public static String SCHOOL_NAME = "SOME SCHOOL NAME";
+    public static int CURRENT_ID = 1;
 
+    private long id;
     private String firstName;
     private String lastName;
     private int age;
@@ -19,6 +21,7 @@ public class Student {
         this.lastName = lastName;
         this.age = age;
         this.averageMark = averageMark;
+        this.id = CURRENT_ID++;
     }
 
     public Student(){
@@ -58,4 +61,11 @@ public class Student {
         this.averageMark = averageMark;
     }
 
+    public Student(long id, String firstName, String lastName, int age, double averageMark) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.averageMark = averageMark;
+    }
 }

@@ -1,6 +1,4 @@
-package week2;
-
-import week3.Student;
+package week3.student;
 
 /**
  * Home work for ITEA BASE week 2
@@ -43,19 +41,23 @@ public class StudentGroup {
     /**
      * Ascending sorts nums
      */
-    public  void sort() {
+    public  Student[] sort() {
         // TODO: 9/19/17
+        // copy students to the new array
+        // sort new array
+        // return new array
+        return null;
     }
 
     /**
      * @return first founded index
      *      which associated with this value,
      *      or -1 if was not found such value.
-     * @param value - searched value in nums
+     * @param firstName - searched value in nums
      */
-    public  int search(Student value) {
+    public  Student[] search(String firstName) {
         // TODO: 9/19/17
-        return -1;
+        return null;
     }
 
     /**
@@ -100,9 +102,9 @@ public class StudentGroup {
 
     /**
      * @return removed value or -1 if was not found
-     * @param value removed value.
+     * @param firstName removed value.
      */
-    public  int removeValue(Student value) {
+    public  int removeValue(String firstName, String lastName) {
         // TODO: 9/19/17
         return -1;
     }

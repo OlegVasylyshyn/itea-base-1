@@ -10,4 +10,8 @@ public class Raccoon extends Animal implements Behavior{
         System.out.println("Raccoon eat");
     }
 
+    @Override
+    public void work() {
+
+    }
 }

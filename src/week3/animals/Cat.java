@@ -1,6 +1,10 @@
 package week3.animals;
 
-public class Cat extends Animal implements Behavior{
+public class Cat extends Animal implements Behavior {
+
+    public Cat() {
+        System.out.println("Cat constructor");
+    }
 
     public void meow(){
         System.out.println("Meow");
@@ -16,5 +20,10 @@ public class Cat extends Animal implements Behavior{
 
     public void eat(){
         System.out.println("Cat eat");
+    }
+
+    @Override
+    public void work() {
+
     }
 }
