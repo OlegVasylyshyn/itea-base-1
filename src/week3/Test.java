@@ -2,6 +2,7 @@ package week3;
 
 import week3.student.StudentGroup;
 import week3.student.Student;
+import week4.OuterPublicClass;
 
 
 public class Test {

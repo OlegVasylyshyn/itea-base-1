@@ -16,16 +16,17 @@ public class SchoolManagerImp implements SchoolManager{
 
     @Override
     public void addStudent() {
-        // TODO: 9/27/17
-        // 1) ask user enter all parameters from console
-        // 2) init new student
-        // 3) put student in group
-        // 4) show message "student was successfully added"
+        String firstName = scanner.readString("Enter first name");
+        String secondName = scanner.readString("Enter second name");
+        int age = scanner.readInt("Enter age");
+        double averageMark = scanner.readDouble("Enter average mark");
+        Student student = new Student(firstName, secondName, age, averageMark);
+        group.add(student);
     }
 
     @Override
     public void removeStudent() {
-        //
+
     }
 
     @Override
@@ -41,6 +42,22 @@ public class SchoolManagerImp implements SchoolManager{
 
     @Override
     public void showAllStudents() {
-        //
+
+//        Iterator<Student> iterator = group.iterator();
+//        while (iterator.hasNext()){
+//            scanner.write(iterator.next());
+//        }
+
+
+//        scanner.write(group.getString());
+
+        for (Student student : group) {
+            scanner.write(student);
+        }
+
+//        for (int i = 0; i < group.size(); i++) {
+//            scanner.write(group.get(i));
+//        }
+
     }
 }

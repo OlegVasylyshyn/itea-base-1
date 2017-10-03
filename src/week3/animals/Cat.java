@@ -1,6 +1,18 @@
 package week3.animals;
 
-public class Cat extends Animal implements Behavior {
+import java.util.Iterator;
+
+public class Cat extends Animal implements Behavior{
+
+    // Non-static block initialisation
+    {
+        System.out.println("Before constructor");
+    }
+
+    // Static block initialisation
+    static {
+        System.out.println("Classloader");
+    }
 
     public Cat() {
         System.out.println("Cat constructor");
@@ -26,4 +38,5 @@ public class Cat extends Animal implements Behavior {
     public void work() {
 
     }
+
 }

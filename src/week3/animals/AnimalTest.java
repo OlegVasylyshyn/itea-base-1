@@ -8,6 +8,7 @@ public class AnimalTest {
         // Inheritance
 
         Cat cat = new Cat();
+        Cat secondCat = new Cat();
         cat.name = "Murzik";
         cat.color = "black";
         cat.type = "homeless";
