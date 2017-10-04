@@ -15,7 +15,6 @@ public class Student {
     private int age;
     private double averageMark;
 
-
     public Student(String firstName, String lastName, int age, double averageMark){
         this.firstName = firstName;
         this.lastName = lastName;
