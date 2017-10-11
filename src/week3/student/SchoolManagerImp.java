@@ -26,7 +26,7 @@ public class SchoolManagerImp implements SchoolManager{
 
     @Override
     public void removeStudent() {
-
+        group.get(2);
     }
 
     @Override
