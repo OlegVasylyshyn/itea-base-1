@@ -1,3 +1,7 @@
 .idea
 out
 class-work.iml
+*.txt
+*.data
+nioWriterTest
+*png

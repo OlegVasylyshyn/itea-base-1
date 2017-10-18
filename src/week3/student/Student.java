@@ -1,10 +1,12 @@
 package week3.student;
 
+import java.io.Serializable;
+
 /**
  * POJO
  * JAVA BEANS
  */
-public class Student {
+public class Student implements Serializable {
 
     public static String SCHOOL_NAME = "SOME SCHOOL NAME";
     public static int CURRENT_ID = 1;
