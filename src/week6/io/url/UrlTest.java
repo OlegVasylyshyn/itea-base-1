@@ -29,7 +29,8 @@ public class UrlTest {
         while (matcher.find()) {
             System.out.print("Start index: " + matcher.start());
             System.out.print(" End index: " + matcher.end() + " ");
-            System.out.println(matcher.group());
+            String picUrl = matcher.group();
+            System.out.println(picUrl);
         }
     }
 

@@ -10,7 +10,7 @@ public class NewMethodTest {
 
         try {
 
-            String reduce = Files.lines(Paths.get("bufferedWriterTest.txt"))
+            String reduce = Files.lines(Paths.get("t.txt"))
                     .reduce("", (l1, l2) -> l1 + "\n" + l2);
 
             System.out.println(reduce);

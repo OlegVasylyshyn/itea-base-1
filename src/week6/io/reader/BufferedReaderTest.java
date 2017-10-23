@@ -9,7 +9,7 @@ public class BufferedReaderTest {
     public static void main(String[] args) {
 
 
-        try(BufferedReader br = new BufferedReader(new FileReader("bufferedWriterTest.txt"))) {
+        try(BufferedReader br = new BufferedReader(new FileReader("t.txt"))) {
 
             int i = 1;
             while (br.ready()) {

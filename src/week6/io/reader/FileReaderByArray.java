@@ -9,7 +9,7 @@ public class FileReaderByArray {
     public static void main(String[] args) {
 
         try (
-                FileReader fr = new FileReader("bufferedWriterTest.txt");
+                FileReader fr = new FileReader("t.txt");
                 BufferedReader reader = new BufferedReader(fr)
         ) {
 

@@ -8,7 +8,7 @@ public class ScannerTest {
 
     public static void main(String[] args) {
 
-        try(Scanner scanner = new Scanner(new FileInputStream("bufferedWriterTest.txt"))){
+        try(Scanner scanner = new Scanner(new FileInputStream("t.txt"))){
 
             while (scanner.hasNextLine()) {
                 System.out.println(scanner.nextLine());

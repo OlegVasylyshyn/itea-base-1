@@ -14,7 +14,7 @@ public class InputStreamReadTest {
 
 
         try (
-                InputStream in = Files.newInputStream(Paths.get("bufferedWriterTest.txt"));
+                InputStream in = Files.newInputStream(Paths.get("t.txt"));
                 BufferedReader reader = new BufferedReader(new InputStreamReader(in))
         ) {
 

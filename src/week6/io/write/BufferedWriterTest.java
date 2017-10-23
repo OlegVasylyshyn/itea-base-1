@@ -8,7 +8,7 @@ public class BufferedWriterTest {
 
     public static void main(String[] args) {
 
-        try(BufferedWriter br = new BufferedWriter(new FileWriter("bufferedWriterTest.txt"))) {
+        try(BufferedWriter br = new BufferedWriter(new FileWriter("t.txt"))) {
 
             br.write("I wrote some\ntext using\nBufferedWriter");
 
