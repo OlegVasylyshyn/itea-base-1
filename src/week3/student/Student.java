@@ -6,7 +6,7 @@ import java.io.Serializable;
  * POJO
  * JAVA BEANS
  */
-public class Student implements Serializable {
+public class Student implements Serializable, Comparable<Student> {
 
     public static String SCHOOL_NAME = "SOME SCHOOL NAME";
     public static int CURRENT_ID = 1;
@@ -72,6 +72,11 @@ public class Student implements Serializable {
         sb.append(", averageMark=").append(averageMark);
         sb.append('}');
         return sb.toString();
+    }
+
+    @Override
+    public int compareTo(Student o) {
+        return 0;
     }
 
 }
