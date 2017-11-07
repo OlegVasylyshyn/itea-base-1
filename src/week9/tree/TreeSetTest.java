@@ -30,6 +30,7 @@ public class TreeSetTest {
         tree.forEach(System.out::print);
         tree.forEach(TreeSetTest::forEach);
         System.out.println();
+        System.out.println();
 
     }
 
