@@ -1,5 +1,9 @@
 package week9.tree;
 
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 public class OurTree<K, V> {
 
     private TreeNode<K, V> root;
@@ -9,7 +13,7 @@ public class OurTree<K, V> {
 
     public V put(K key, V value) {
 
-        @SuppressWarnings("cast")
+        @SuppressWarnings("unchecked")
         Comparable<? super K> comparator = (Comparable<? super K>) key;
 
         if(root == null) {
